@@ -1,6 +1,21 @@
 # 📉 Customer Churn Prediction & Retention Strategy
 
-This project presents a full end-to-end data science solution to a **real-world churn problem** in the telecommunications industry. It includes business-driven data exploration, churn segmentation, model development, and actionable recommendations — packaged in a professional executive report and supported by machine learning deployment.
+This project presents a full end-to-end data science solution to a real-world churn problem in the telecommunications industry. It includes business-driven data exploration, churn segmentation, model development, and actionable recommendations — packaged in a professional executive report and supported by machine learning deployment.
+
+---
+
+## 🗂️ Table of Contents
+
+- [Problem Statement](#problem-statement)
+- [Project Overview](#project-overview)
+- [EDA Analysis & Key Insights](#eda-analysis--key-insights)
+- [Modeling Approach](#modeling-approach)
+- [Business Impact](#business-impact)
+- [Results Summary](#results-summary)
+- [Tech Stack](#tech-stack)
+- [Files & Structure](#files--structure)
+- [Author](#author)
+- [Status](#status)
 
 ---
 
@@ -23,13 +38,39 @@ Customer churn directly impacts recurring revenue and profitability. The objecti
 
 ---
 
-## 🚀 Key Deliverables
+## 🔍 EDA Analysis & Key Insights
 
-- ✅ Executive Report (PDF): [Download Here](https://github.com/vijaykumar1799/Telecommunications-Churn-analysis/blob/main/Churn%20Analysis%20Executive%20Report.pdf)
-- ✅ Cleaned and engineered datasets (v1, v2, v3)
-- ✅ Machine learning pipeline (Logistic Regression, Random Forest, XGBoost)
-- ✅ Visualizations: EDA, segment-level churn analysis, correlation heatmaps
-- 🔜 Upcoming: FastAPI + Streamlit model deployment
+- **High churn rates** were observed among:
+  - Month-to-month contract users
+  - Solo customers not enrolled in group plans
+  - Customers paying via Direct Debit or Paper Check
+- **Higher monthly charges and frequent customer service calls** were strong predictors of churn.
+- **Younger customers (<30) and seniors** showed slightly elevated churn risks.
+- **Unlimited data plan users** also churned at a higher rate than expected, indicating potential dissatisfaction.
+- **Business Segments Identified** for targeted retention campaigns based on churn drivers and LTV risk.
+
+---
+
+## 🤖 Modeling Approach
+
+Three models were tested across multiple dataset versions (full data, feature-selected, and feature-engineered):
+
+- Logistic Regression
+- Random Forest
+- XGBoost (final selected model)
+
+Focus was placed on maximizing **recall and F1-score for churners** to prioritize early intervention and revenue preservation.
+
+---
+
+## 📈 Business Impact
+
+- **Estimated Churn Reduction**: 7.34%  
+- **Estimated Revenue Retention**: ~$317,000  
+- **Model Recall**: 81% (catching majority of true churners)
+- **Precision**: 85% (avoiding unnecessary interventions)
+
+The model enables efficient retention targeting and protects customer lifetime value through early churn risk detection.
 
 ---
 
@@ -39,26 +80,26 @@ Customer churn directly impacts recurring revenue and profitability. The objecti
 - **Accuracy**: 91.13%  
 - **Precision (Churn)**: 85%  
 - **Recall (Churn)**: 81%  
-- **Estimated Churn Reduction**: 7.34%  
-- **Revenue Retained**: ~$317,000 based on median LTV
+- **F1 Score (Churn)**: 83%
 
 ---
 
 ## 🛠️ Tech Stack
 
 - Python, Pandas, Scikit-learn, XGBoost
-- Matplotlib, Seaborn, Plotly, Numpy
-- FastAPI (API deployment, upcoming)
-- Streamlit (frontend UI, upcoming)
+- Matplotlib, Seaborn, Plotly
+- Streamlit (upcoming frontend deployment)
+- FastAPI (upcoming API deployment)
 
 ---
 
+
+---
 
 ## 👤 Author
 
 **Vijay Kumar**  
 📫 [LinkedIn](https://www.linkedin.com/in/vijaykumar1997/)
-📁 Portfolio-ready project to demonstrate business + technical skills
 
 ---
 
@@ -66,5 +107,4 @@ Customer churn directly impacts recurring revenue and profitability. The objecti
 
 ✅ Report complete  
 ✅ Model trained & evaluated  
-🔜 API + Streamlit deployment (In Progress)
-
+🔜 API + Streamlit deployment
